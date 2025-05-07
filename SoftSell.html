@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SoftSell - Turn your software licenses into cash quickly and securely.">
+    <title>SoftSell - Software License Resale</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .dark-mode {
+            background-color: #1a202c;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+
+    <!-- Hero Section -->
+    <header class="flex flex-col items-center justify-center h-screen text-center">
+        <h1 class="text-4xl font-bold">SoftSell - Turn Your Software Licenses Into Cash</h1>
+        <p class="mt-4 text-lg">Get the best value for your unused or surplus software licenses quickly and securely.</p>
+        <button class="mt-6 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition">
+            Get a Quote
+        </button>
+    </header>
+
+    <!-- How It Works Section -->
+    <section class="py-16 bg-gray-200">
+        <h2 class="text-3xl font-bold text-center">How It Works</h2>
+        <div class="flex justify-around mt-8">
+            <div class="text-center">
+                <div class="text-4xl">📤</div>
+                <h3 class="font-semibold">Upload Licenses</h3>
+                <p>Easily upload your software license details through our secure portal.</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl">⚖️</div>
+                <h3 class="font-semibold">Get Valuation</h3>
+                <p>Our experts evaluate your licenses and provide a competitive offer.</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl">💰</div>
+                <h3 class="font-semibold">Get Paid</h3>
+                <p>Receive payment promptly once you accept the offer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16">
+        <h2 class="text-3xl font-bold text-center">Why Choose Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl">🔒</div>
+                <h3 class="font-semibold">Secure Transactions</h3>
+                <p>Your data and licenses are handled with the highest security standards.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl">⚡</div>
+                <h3 class="font-semibold">Fast & Easy</h3>
+                <p>Streamlined process from upload to payment, designed to save you time.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl">💼</div>
+                <h3 class="font-semibold">Trusted Partners</h3>
+                <p>We work with verified buyers and offer honest valuations.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-4xl">📞</div>
+                <h3 class="font-semibold">Dedicated Support</h3>
+                <p>Our support team is here to assist you every step of the way.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="py-16 bg-gray-200">
+        <h2 class="text-3xl font-bold text-center">What Our Customers Say</h2>
+        <div class="max-w-4xl mx-auto mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
+                <p class="italic">"SoftSell made reselling our unused licenses so effortless. The valuation was fair and payment was timely."</p>
+                <p class="font-semibold">Jenna Lawson</p>
+                <p class="text-gray-600">IT Manager, TechSolutions</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="italic">"Their secure platform and expert support gave us confidence to sell at the best prices."</p>
+                <p class="font-semibold">Mark Reyes</p>
+                <p class="text-gray-600">Procurement Lead, Innovatech</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16">
+        <h2 class="text-3xl font-bold text-center">Contact Us</h2>
+        <form class="max-w-md mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <label for="name" class="block mb-2">Name <span class="text-red-500">*</span></label>
+            <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded mb-4" required placeholder="Your full name">
+
+            <label for="email" class="block mb-2">Email <span class="text-red-500">*</span></label>
+            <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded mb-4" required placeholder="you@example.com">
+
+            <label for="company" class="block mb-2">Company</label>
+            <input type="text" id="company" class="w-full p-2 border border-gray-300 rounded mb-4" placeholder="Your company name">
+
+            <label for="license-type" class="block mb-2">License Type</label>
+            <select id="license-type" class="w-full p-2 border border-gray-300 rounded mb-4">
+                <option value="" disabled selected>Select a license type</option>
+                <option value="microsoft">Microsoft</option>
+                <option value="adobe">Adobe</option>
+                <option value="autodesk">Autodesk</option>
+                <option value="oracle">Oracle</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message" class="block mb-2">Message</label>
+            <textarea id="message" class="w-full p-2 border border-gray-300 rounded mb-4" rows="4" placeholder="Your message or questions"></textarea>
+
+            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition">Send</button>
+        </form>
+    </section>
+
+    <!-- Light/Dark Mode Toggle -->
+    <div class="fixed top-4 right-4">
+        <button id="theme-toggle" class="bg-gray-800 text-white p-2 rounded-full shadow-lg">
+            Toggle Dark Mode
+        </button>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
